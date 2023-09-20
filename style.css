@@ -1,3 +1,4 @@
+/* defining fonts used in the site */
 @font-face {
   font-family: "GAMECUBEN";
   src: url("./public/font/GameCube.ttf");
@@ -6,14 +7,24 @@
   font-family: "Bebas_Neue";
   src: url("./public/font/BebasNeue-Regular.ttf");
 }
+/* genaric styling */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-body {
+/* use html tag just for scrolling */
+html {
   scroll-behavior: smooth;
 }
+/* global listing styling */
+ul {
+  list-style: none;
+}
+li a {
+  color: #fff;
+}
+/* hero section styling */
 .hero {
   background-image: url("/public/images/hero.png");
   width: 100%;
@@ -47,21 +58,20 @@ body {
 }
 .heading-3 {
   font-size: 17px;
+  font-weight: 500;
   font-family: Montserrat;
-  line-height: 20px;
+  line-height: 25px;
   color: #fff;
+  margin-bottom: 10px;
 }
-ul {
-  list-style: none;
-}
-li a {
-  color: #fff;
-}
+
 .sub-heading {
   font-family: Montserrat;
   font-size: 2rem;
   text-align: center;
+  text-transform: capitalize;
 }
+/* section heading text color white */
 .section-heading {
   font-family: Bebas_Neue;
   font-size: 80px;
@@ -81,6 +91,7 @@ li a {
   font-size: 1rem;
   line-height: 30px;
 }
+/* section heading text color dark */
 .section-heading-dark {
   font-family: Bebas_Neue;
   font-size: 80px;
@@ -100,6 +111,7 @@ li a {
   font-size: 1rem;
   line-height: 30px;
 }
+/* sticky header */
 .sticky {
   position: sticky;
   top: 0;
@@ -145,4 +157,10 @@ li a {
     font-size: 1rem;
     text-align: center;
   }
+  .marginTop-1 {
+    margin-top: 3rem !important;
+  }
+}
+.nowrap {
+  text-wrap: nowrap;
 }
